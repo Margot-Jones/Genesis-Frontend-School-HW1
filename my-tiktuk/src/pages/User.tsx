@@ -42,20 +42,6 @@ let User = () => {
   const classes = useStyles();
   const { username } = useParams();
 
-  // const [userInfo, setUserInfo] = useState<UserProp>({} as UserProp);
-
-  // useEffect(() => {
-  //   const fetchMyAPI =  async () => {
-  //     // const response = await getTrendingFeed();
-
-  //     setUserInfo(await getUserInfo(username || 'default'));
-  //     console.log(userInfo);
-  //     console.log("await response");
-  //   }
-
-  //   fetchMyAPI()
-  // }, [username])
-
   const initialUserInfoState = {
     uniqueId: "",
     nickname: "",
