@@ -1,10 +1,10 @@
-import axios from "axios";
-import { default as getFeed } from "../lib/getTrendingFeed.json";
-import { default as getUser } from "../lib/getUserInfo.json";
-import { default as getUserVideo } from "../lib/getUserFeed.json";
-import { ItemList } from "../types/video";
-import { UserProp } from "../types/user";
-import { PostProp } from "../types/feed";
+import axios from 'axios';
+import { default as getFeed } from '../lib/getTrendingFeed.json';
+import { default as getUser } from '../lib/getUserInfo.json';
+import { default as getUserVideo } from '../lib/getUserFeed.json';
+import { ItemList } from '../types/video';
+import { UserProp } from '../types/user';
+import { PostProp } from '../types/feed';
 
 export const instance = axios.create({
   baseURL: 'https://tiktok33.p.rapidapi.com',
@@ -40,13 +40,5 @@ export const getUserInfo = async (username: string): Promise<UserProp> => {
 };
 
 export const getUserFeedVideo = async (username='dave.xp'): Promise<ItemList[]> => {
-  // try {
-  //   const response = await instance.get(`/user/feed/${username}`);
-  //   console.log(response.data.itemList);
-  //   return response.data.itemList;
-  // } catch (error) {
-  //   console.error(error);
-  //   return getUserVideo.itemList;
-  // }
   return getUserVideo.itemList;
 };
