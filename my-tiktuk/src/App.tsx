@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import ErrorCatcher from "./components/ErrorCatcher/ErrorCatcher";
 import Navbar from "./components/Navbar/Navbar";
 import Feed from "./pages/Feed";
