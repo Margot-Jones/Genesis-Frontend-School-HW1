@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-// import { getOnePost } from "./api/api";
 import "./App.css";
 import ErrorCatcher from "./components/ErrorCatcher/ErrorCatcher";
 import Navbar from "./components/Navbar/Navbar";
